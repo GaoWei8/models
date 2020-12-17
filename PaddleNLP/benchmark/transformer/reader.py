@@ -105,7 +105,7 @@ def create_infer_loader(args):
     dataset = WMT14ende.get_datasets(
         mode="test", transform_func=transform_func).filter(
             partial(
-                min_max_filer, max_len=args.max_length))
+                min_max_filer, max_len=args.max_length, min_len=args.max_length))
 
     batch_sampler = SamplerHelper(dataset).batch(
         batch_size=args.infer_batch_size, drop_last=False)

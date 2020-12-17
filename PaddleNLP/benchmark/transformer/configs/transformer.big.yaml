@@ -25,12 +25,12 @@ use_gpu: True
 # Args for reader, see reader.py for details
 pool_size: 200000
 sort_type: "global"
-batch_size: 4096
+batch_size: 2560 
 infer_batch_size: 16
 
 # Hyparams for training:
 # The number of epoches for training
-epoch: 30
+epoch: 1 
 
 # The hyper parameters for Adam optimizer.
 # This static learning_rate will be applied to the LearningRateScheduler

@@ -79,7 +79,7 @@ def do_train(args):
         transformer = TransformerModel(
             src_vocab_size=args.src_vocab_size,
             trg_vocab_size=args.trg_vocab_size,
-            max_length=args.max_length + 1,
+            max_length=1024 + 1,
             n_layer=args.n_layer,
             n_head=args.n_head,
             d_model=args.d_model,
